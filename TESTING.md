@@ -10,3 +10,5 @@ python demo.py
 ```
 
 No real provider calls are made by the sample. Read README.md for supported runtimes and limits.
+
+Each successful run also uploads evaluation-report-python-* under Artifacts. Download, extract and open report.html to inspect the synthetic comparison report offline.

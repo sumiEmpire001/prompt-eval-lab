@@ -18,4 +18,9 @@ jobs:
           python-version: ${{ matrix.python }}
       - run: python -m unittest discover -s tests -v
       - name: Run sample scenario
-        run: python demo.py
+        run: python demo.py --html report.html
+      - name: Downloadable synthetic evaluation report
+        uses: actions/upload-artifact@v7
+        with:
+          name: evaluation-report-python-${{ matrix.python }}
+          path: report.html
